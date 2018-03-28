@@ -1,0 +1,49 @@
+<h2> Update Entry </h2>
+<form>
+	<table id="workoutEdit">
+		<tr>
+			<td><label for "name" >Exercise name: </label>
+				<input type="text" id="name" value="{{this.name}}" required>
+			</td>
+		</tr>
+		<tr>
+			<td><label for "reps" >Reps: </label>
+				<input type="text" id="reps" value="{{this.reps}}">
+			</td>
+		</tr>
+		<tr>
+			<td><label for "weight" >Weight: </label>
+				<input type="text" id="weight" value="{{this.weight}}">
+			</td>
+		</tr>
+		<tr>
+			<td><label for "date" >Date: </label>
+				<input type="date" id="date" value="{{this.date}}" >
+			</td>
+		</tr>
+		<tr>
+			<td><label for "unit" >Unit(lbs=checked): </label>
+				<input type="checkbox" id="unit" 
+				{{#if this.lbs}}
+					checked
+				{{else}}
+				{{/if}}>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="hidden" id="idInput" value="{{this.id}}">
+			</td>
+		</tr>
+	</table>
+</form>
+
+<br>
+<input type="submit" id="editRow" value="Save">
+<br>
+<br>
+<input type="submit" id="goHome" value="Go Home"></td>
+
+<table id="dbTable">
+</table>
+<p id="textOutput"></p>
+<script type="text/javascript" src="/update.js"></script>

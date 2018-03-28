@@ -1,0 +1,47 @@
+<h2> Add New Entry </h2>
+<form>
+	<table id="workoutInput">
+		<tr>
+			<td><label for "name" >Exercise name: </label>
+				<input type="text" id="name" required>
+			</td>
+		</tr>
+		<tr>
+			<td><label for "reps" >Reps: </label>
+				<input type="text" id="reps">
+			</td>
+		</tr>
+		<tr>
+			<td><label for "weight" >Weight: </label>
+				<input type="text" id="weight">
+			</td>
+		</tr>
+		<tr>
+			<td><label for "date" >Date: </label>
+				<input type="date" id="date" placeholder="yyyy-mm-dd format">
+			</td>
+		</tr>
+		<tr>
+			<td><label for "unit" >Unit(lbs=checked): </label>
+				<input type="checkbox" id="unit">
+			</td>
+		</tr>
+		<tr>
+		<td><br></td>
+		</tr>
+	</table>
+</form>
+<table>
+	<tr>
+		<td width="50px"></td>
+		<td><input type="submit" id="addItem" value="Add Item"></td>
+		<td width="250px"></td>
+		<td><input type="submit" id="deleteTable" value="Delete table"</td>
+	</tr>
+</table>
+
+<h3 id="tableTitle">Database table data</h3>
+<table id="dbTable">
+</table>
+<p id="textOutput"></p>
+<script type="text/javascript" src="/home.js"></script>
